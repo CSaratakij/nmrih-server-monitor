@@ -12,6 +12,7 @@
 
 # Known issues :
 - Make sure you have all your map that list in 'maps.txt', If server process failed to find that missing map -> This program will think Server is still online but can't actually connect to it. (Can solve with using actual RCON protocal to check server status which I will fix in further release.)
+- Right now, All Setting is specially for "nurseryms.ddns.net" server, If another server want to use this program -> You might want to change some code & hardcode setting.
 
 # License
 - ![MIT](LICENSE)
