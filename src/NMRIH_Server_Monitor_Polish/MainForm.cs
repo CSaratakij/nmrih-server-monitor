@@ -210,7 +210,7 @@ namespace NMRIH
                         var commandArgs = COMMON_COMMAND_ARGS;
                         commandArgs += " -port " + servers[confirmRestartQueues[i]].Info.Port;
                         commandArgs += " +exec " + "server" + (confirmRestartQueues[i] + 1) + ".cfg";
-                        commandArgs += " +map " + initMap;           // <- Change to random map later
+                        commandArgs += " +map " + initMap;
 
                         servers[confirmRestartQueues[i]].Info.ProcessStartInfo.Arguments = commandArgs;
                         Console.WriteLine("Result Command Server ({0}) : {1} {2}", (confirmRestartQueues[i] + 1).ToString(), COMMAND, commandArgs);
@@ -302,7 +302,7 @@ namespace NMRIH
                 var commandArgs = COMMON_COMMAND_ARGS;
                 commandArgs += " -port " + (INIT_PORT + i);
                 commandArgs += " +exec " + "server" + (i + 1) + ".cfg";
-                commandArgs += " +map " + initMap;           // <- Change to random map later
+                commandArgs += " +map " + initMap;
 
                 Console.WriteLine("Result Command Server ({0}) : {1} {2}", (i + 1).ToString(), COMMAND, commandArgs);
 
