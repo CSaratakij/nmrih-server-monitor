@@ -209,7 +209,7 @@ namespace NMRIH
                         //"srcds.exe -game nmrih -insecure -console -nogui -port 28010 +exec server1.cfg +map nmo_fema";
                         var commandArgs = COMMON_COMMAND_ARGS;
                         commandArgs += " -port " + servers[confirmRestartQueues[i]].Info.Port;
-                        commandArgs += " +exec " + "server" + (confirmRestartQueues[i] + 1) + ".cfg";
+                        commandArgs += " +servercfgfile " + "server" + (confirmRestartQueues[i] + 1) + ".cfg";
                         commandArgs += " +map " + initMap;
 
                         servers[confirmRestartQueues[i]].Info.ProcessStartInfo.Arguments = commandArgs;
